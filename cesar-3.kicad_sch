@@ -5,6 +5,128 @@
   (paper "A4")
 
   (lib_symbols
+    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 2.032 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R" (at 0 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at -1.778 0 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R res resistor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Resistor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_0_1"
+        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "R_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "LED:IR26-21C_L110_TR8" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "IR26-21C_L110_TR8" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "LED_SMD:LED_1206_3216Metric" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "IR LED" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "940nm, 20 deg, Infrared LED, 1206" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "LED*1206*3216Metric*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "IR26-21C_L110_TR8_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy 1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.048 -0.762)
+            (xy -4.572 -2.286)
+            (xy -3.81 -2.286)
+            (xy -4.572 -2.286)
+            (xy -4.572 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 -0.762)
+            (xy -3.302 -2.286)
+            (xy -2.54 -2.286)
+            (xy -3.302 -2.286)
+            (xy -3.302 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "IR26-21C_L110_TR8_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "ScottoKeebs:MCU_Nice_Nano_V2" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 0 0)
         (effects (font (size 1.524 1.524)))
@@ -263,6 +385,60 @@
         )
       )
     )
+    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (at 1.27 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "SW_Push" (at 0 -1.524 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SW_Push_0_1"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
   )
 
   (junction (at 186.69 101.6) (diameter 0) (color 0 0 0 0)
@@ -369,6 +545,9 @@
   )
   (junction (at 199.39 69.85) (diameter 0) (color 0 0 0 0)
     (uuid 70d95861-ebaf-42f2-b52b-d49af1dcb8b0)
+  )
+  (junction (at 72.39 140.97) (diameter 0) (color 0 0 0 0)
+    (uuid 7a0a7669-bb0b-4e31-be60-4859a4e0a2ba)
   )
   (junction (at 148.59 69.85) (diameter 0) (color 0 0 0 0)
     (uuid 8cfea1f0-b474-49a7-9af5-0e7e8f148a99)
@@ -512,6 +691,10 @@
     (stroke (width 0) (type default))
     (uuid 1337237e-9cea-46c8-9a85-b086012522d0)
   )
+  (wire (pts (xy 72.39 130.81) (xy 72.39 140.97))
+    (stroke (width 0) (type default))
+    (uuid 1446ec41-5339-41f2-87b9-bf333e15bbd3)
+  )
   (wire (pts (xy 54.61 50.8) (xy 54.61 69.85))
     (stroke (width 0) (type default))
     (uuid 188cfb63-97d5-4269-9295-b59ccf28b4bf)
@@ -551,6 +734,10 @@
   (wire (pts (xy 204.47 101.6) (xy 223.52 101.6))
     (stroke (width 0) (type default))
     (uuid 35a882e3-97a1-4f7c-aa41-959310370b5d)
+  )
+  (wire (pts (xy 80.01 140.97) (xy 85.09 140.97))
+    (stroke (width 0) (type default))
+    (uuid 36dac7b8-2db2-4649-a77a-a0e16a495333)
   )
   (wire (pts (xy 44.45 82.55) (xy 59.69 82.55))
     (stroke (width 0) (type default))
@@ -604,6 +791,10 @@
     (stroke (width 0) (type default))
     (uuid 56944975-b784-47c8-a387-7fc06d3cc812)
   )
+  (wire (pts (xy 165.1 140.97) (xy 165.1 138.43))
+    (stroke (width 0) (type default))
+    (uuid 56ff6629-97aa-427a-b7c7-6e627a8e72a5)
+  )
   (wire (pts (xy 59.69 101.6) (xy 77.47 101.6))
     (stroke (width 0) (type default))
     (uuid 57916577-2d2d-4b48-9a92-e88db03c64fe)
@@ -636,6 +827,10 @@
     (stroke (width 0) (type default))
     (uuid 649261e1-b657-41d9-86c6-1ea209c8a42f)
   )
+  (wire (pts (xy 104.14 143.51) (xy 120.65 143.51))
+    (stroke (width 0) (type default))
+    (uuid 64d346f3-818a-474a-9f07-f7f0bd4a1a3f)
+  )
   (wire (pts (xy 186.69 101.6) (xy 204.47 101.6))
     (stroke (width 0) (type default))
     (uuid 669c2b99-d25d-4144-b0ff-8c732c0fd143)
@@ -648,9 +843,17 @@
     (stroke (width 0) (type default))
     (uuid 6c909284-f9eb-4f07-ba55-8b44a8a4b72f)
   )
+  (wire (pts (xy 104.14 135.89) (xy 104.14 130.81))
+    (stroke (width 0) (type default))
+    (uuid 6e58243e-6dc7-4780-bff3-99fab88b1e3f)
+  )
   (wire (pts (xy 77.47 121.92) (xy 96.52 121.92))
     (stroke (width 0) (type default))
     (uuid 71e8a88b-0f4d-4136-9554-e431317a0020)
+  )
+  (wire (pts (xy 120.65 138.43) (xy 104.14 138.43))
+    (stroke (width 0) (type default))
+    (uuid 73f66adb-3679-4a7c-adcc-5fdf99ac54c3)
   )
   (wire (pts (xy 39.37 38.1) (xy 39.37 50.8))
     (stroke (width 0) (type default))
@@ -676,6 +879,10 @@
     (stroke (width 0) (type default))
     (uuid 7ed6c79f-b4ae-4710-87a2-e176314f37ee)
   )
+  (wire (pts (xy 151.13 138.43) (xy 154.94 138.43))
+    (stroke (width 0) (type default))
+    (uuid 816d197e-2639-4d77-828d-d62308d0a19b)
+  )
   (wire (pts (xy 72.39 38.1) (xy 72.39 50.8))
     (stroke (width 0) (type default))
     (uuid 82c2e3ec-86bb-4ced-a9d5-df2cf32e5c27)
@@ -696,13 +903,25 @@
     (stroke (width 0) (type default))
     (uuid 950d8375-7df5-44ff-9277-701a31a61a0f)
   )
+  (wire (pts (xy 151.13 140.97) (xy 165.1 140.97))
+    (stroke (width 0) (type default))
+    (uuid 963cacfd-ed6d-4dea-8d64-6a48c93fce66)
+  )
   (wire (pts (xy 90.17 40.64) (xy 91.44 40.64))
     (stroke (width 0) (type default))
     (uuid 99b74eba-1785-42bf-abe4-cf4209c468f0)
   )
+  (wire (pts (xy 104.14 146.05) (xy 104.14 143.51))
+    (stroke (width 0) (type default))
+    (uuid 9b4144cd-130d-4417-88bc-de7cda3fed91)
+  )
   (wire (pts (xy 96.52 101.6) (xy 114.3 101.6))
     (stroke (width 0) (type default))
     (uuid 9b7131c6-7223-4164-9824-c0e04d288685)
+  )
+  (wire (pts (xy 80.01 130.81) (xy 85.09 130.81))
+    (stroke (width 0) (type default))
+    (uuid 9ba31865-8199-4aa5-8c4a-0467527a1c91)
   )
   (wire (pts (xy 39.37 69.85) (xy 39.37 88.9))
     (stroke (width 0) (type default))
@@ -712,9 +931,17 @@
     (stroke (width 0) (type default))
     (uuid a1e8b97e-2fe0-40d4-9c67-c644a35492f4)
   )
+  (wire (pts (xy 72.39 146.05) (xy 104.14 146.05))
+    (stroke (width 0) (type default))
+    (uuid a2b7d167-c309-48ce-bafe-bb0ebea9f2cb)
+  )
   (wire (pts (xy 109.22 38.1) (xy 109.22 50.8))
     (stroke (width 0) (type default))
     (uuid a3e79cd1-f608-49b5-80f8-10f1bfb514f2)
+  )
+  (wire (pts (xy 104.14 138.43) (xy 104.14 140.97))
+    (stroke (width 0) (type default))
+    (uuid a931b431-3a96-4eaa-88cd-31d17fe07e22)
   )
   (wire (pts (xy 123.19 121.92) (xy 114.3 121.92))
     (stroke (width 0) (type default))
@@ -772,6 +999,10 @@
     (stroke (width 0) (type default))
     (uuid c579f33d-68f4-4499-9975-1cc47afe47d6)
   )
+  (wire (pts (xy 120.65 135.89) (xy 104.14 135.89))
+    (stroke (width 0) (type default))
+    (uuid c6ebdf84-682f-47c6-ba65-75bf5e266415)
+  )
   (wire (pts (xy 218.44 50.8) (xy 218.44 69.85))
     (stroke (width 0) (type default))
     (uuid c862ef24-50ff-4aa2-8072-2e734aded827)
@@ -779,6 +1010,10 @@
   (wire (pts (xy 256.54 63.5) (xy 241.3 63.5))
     (stroke (width 0) (type default))
     (uuid caa80a01-c14e-4469-8375-e6c0074a5894)
+  )
+  (wire (pts (xy 104.14 130.81) (xy 92.71 130.81))
+    (stroke (width 0) (type default))
+    (uuid cddba769-3822-4afd-882b-48341c6de431)
   )
   (wire (pts (xy 54.61 69.85) (xy 54.61 88.9))
     (stroke (width 0) (type default))
@@ -803,6 +1038,10 @@
   (wire (pts (xy 72.39 88.9) (xy 72.39 109.22))
     (stroke (width 0) (type default))
     (uuid d8021657-639e-45a9-a9f2-79a1b4c9680a)
+  )
+  (wire (pts (xy 104.14 140.97) (xy 92.71 140.97))
+    (stroke (width 0) (type default))
+    (uuid da03b202-2931-43a0-ad9d-8a8534140d36)
   )
   (wire (pts (xy 114.3 163.83) (xy 120.65 163.83))
     (stroke (width 0) (type default))
@@ -867,6 +1106,10 @@
   (wire (pts (xy 90.17 38.1) (xy 90.17 40.64))
     (stroke (width 0) (type default))
     (uuid f5f1cf23-6663-44d1-bddf-d626a7dce95d)
+  )
+  (wire (pts (xy 72.39 140.97) (xy 72.39 146.05))
+    (stroke (width 0) (type default))
+    (uuid fa7cbf32-297b-404f-88cb-f9ae5cc489fa)
   )
   (wire (pts (xy 156.21 153.67) (xy 151.13 153.67))
     (stroke (width 0) (type default))
@@ -1162,7 +1405,7 @@
     (pin "1" (uuid 296e1228-868b-45b4-b501-157c07615335))
     (pin "2" (uuid 3006aaf9-a735-4125-8d9f-bd8bcfaedb19))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D33") (unit 1)
         )
@@ -1194,7 +1437,7 @@
     (pin "1" (uuid 94b18903-6f2d-431f-aaaa-d5c640adc812))
     (pin "2" (uuid e4756c5c-c1c1-486a-95c6-b70c15be82b3))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D39") (unit 1)
         )
@@ -1226,7 +1469,7 @@
     (pin "1" (uuid a93f6355-2bb1-4e54-8ffd-533f3cd63899))
     (pin "2" (uuid b3815440-ce7c-49ec-ab2c-f91d443200d2))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D16") (unit 1)
         )
@@ -1252,7 +1495,7 @@
     (pin "2" (uuid 34bb8fa1-e2d5-4ca2-bb7c-f8627a7d1e00))
     (pin "1" (uuid bd981a13-d023-4484-82ed-bb640f2ec9b6))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S41") (unit 1)
         )
@@ -1278,7 +1521,7 @@
     (pin "2" (uuid 4e8c50ee-e75f-4040-893d-f7c4fc8ac6c8))
     (pin "1" (uuid 4d14bc51-06fa-4183-be52-7233ffdd7f9e))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S6") (unit 1)
         )
@@ -1310,9 +1553,35 @@
     (pin "1" (uuid 7edafbe6-2363-45ec-8d51-95a41bda3168))
     (pin "2" (uuid bb2e0509-c9c8-4ba0-b939-2d2a35cd40d2))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D37") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "LED:IR26-21C_L110_TR8") (at 88.9 140.97 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 175e5bf4-74cf-4f3c-bb1f-ac74c0722cd7)
+    (property "Reference" "D0" (at 87.3125 134.62 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "IR26-21C_L110_TR8" (at 87.3125 137.16 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "LED_SMD:LED_1206_3216Metric" (at 88.9 135.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf" (at 88.9 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 6a12405a-9c5f-40b6-bc12-cef0c304e0b5))
+    (pin "1" (uuid 55437019-0d97-4917-8a76-65ace5721d1b))
+    (instances
+      (project "cesar-3"
+        (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
+          (reference "D0") (unit 1)
         )
       )
     )
@@ -1336,7 +1605,7 @@
     (pin "2" (uuid f3f68535-bd25-47ff-a93d-5f0ca6163293))
     (pin "1" (uuid efd9f7eb-3349-4258-95ce-67e8f8768fdb))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S26") (unit 1)
         )
@@ -1362,7 +1631,7 @@
     (pin "2" (uuid 266d7c7e-4500-4d0a-91d6-3d9733225f2e))
     (pin "1" (uuid f1cc3633-378f-428f-af99-18e6e9be4896))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S32") (unit 1)
         )
@@ -1394,7 +1663,7 @@
     (pin "1" (uuid b1db6cb9-3448-48c8-995f-cfe0f9088e16))
     (pin "2" (uuid b9306add-f63b-4f75-a5ff-8be6e7c8ff0d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D36") (unit 1)
         )
@@ -1426,7 +1695,7 @@
     (pin "1" (uuid 3a1e02e7-dc5d-4e32-95e5-6a86ee680b71))
     (pin "2" (uuid 54030ed7-271e-4d99-b0d0-d86be3612bd7))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D23") (unit 1)
         )
@@ -1452,7 +1721,7 @@
     (pin "2" (uuid cf65e0be-28ff-4526-9b5e-c57101be9662))
     (pin "1" (uuid 0472caa9-3cb3-4ed5-b5a0-00f7125a6313))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S27") (unit 1)
         )
@@ -1478,7 +1747,7 @@
     (pin "2" (uuid 53ba1552-1141-48fb-b5de-fb6c25d65362))
     (pin "1" (uuid b33810e4-4d35-4e2f-a582-eb7d67def07d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S25") (unit 1)
         )
@@ -1510,7 +1779,7 @@
     (pin "1" (uuid d5905e01-28a1-4e3f-98f6-f6833ba1d597))
     (pin "2" (uuid b5542df5-78df-4ca9-950e-947b67eba712))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D29") (unit 1)
         )
@@ -1542,7 +1811,7 @@
     (pin "1" (uuid 85d0d1f3-79be-492d-8b59-18a1e8188d6d))
     (pin "2" (uuid 14afc734-5372-49fc-a9d3-c41d3e14844c))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D24") (unit 1)
         )
@@ -1568,7 +1837,7 @@
     (pin "2" (uuid f6ace5db-9de5-4e04-9433-c90e93d7ac06))
     (pin "1" (uuid 56b8765a-0ba0-45a4-9016-0372098b20b6))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S9") (unit 1)
         )
@@ -1600,7 +1869,7 @@
     (pin "1" (uuid a5424f47-1472-407e-92b4-07bcbccf419f))
     (pin "2" (uuid b8684d4b-896b-49a5-98f0-1075c95f5639))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D11") (unit 1)
         )
@@ -1632,7 +1901,7 @@
     (pin "1" (uuid 2eb302b2-c997-4927-9f59-9d49089aaef5))
     (pin "2" (uuid 907ed6be-ce8c-449c-91d0-c1cd61ccc97d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D14") (unit 1)
         )
@@ -1658,7 +1927,7 @@
     (pin "2" (uuid 44ea8ca2-7f43-40ba-92fb-00f69d111538))
     (pin "1" (uuid a1efa75d-4eef-4540-a892-6b1a141de5d7))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S29") (unit 1)
         )
@@ -1690,9 +1959,35 @@
     (pin "1" (uuid 4bb8bd95-7ecf-4114-b910-6b35bcfa22bd))
     (pin "2" (uuid 7cf5a35b-176d-4cea-a7cd-6efea9d986eb))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D22") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "LED:IR26-21C_L110_TR8") (at 88.9 130.81 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3c5f13d2-9a55-4877-8d8a-f366617ca73d)
+    (property "Reference" "D43" (at 87.3125 124.46 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "IR26-21C_L110_TR8" (at 87.3125 127 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "LED_SMD:LED_1206_3216Metric" (at 88.9 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.everlight.com/file/ProductFile/IR26-21C-L110-TR8.pdf" (at 88.9 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 2be815a9-781e-49ee-a656-984fcd05cf56))
+    (pin "1" (uuid dc70b7bb-8ae8-4666-96c3-da2976a8c930))
+    (instances
+      (project "cesar-3"
+        (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
+          (reference "D43") (unit 1)
         )
       )
     )
@@ -1716,7 +2011,7 @@
     (pin "2" (uuid 74bd2a83-a2d9-470b-846e-17a1b2450157))
     (pin "1" (uuid a5c31529-428b-42d1-a2a5-cc842f324969))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S30") (unit 1)
         )
@@ -1742,7 +2037,7 @@
     (pin "2" (uuid 3994dfc9-9545-4469-87de-1e2ef6ddc904))
     (pin "1" (uuid 152cde17-db48-4643-8f0e-b1aed3194e03))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S33") (unit 1)
         )
@@ -1774,7 +2069,7 @@
     (pin "1" (uuid 82ee5356-24ff-4a69-ad83-7fa0d59f9e6e))
     (pin "2" (uuid 22659557-ee4f-4e29-9204-9116eaea4867))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D17") (unit 1)
         )
@@ -1800,7 +2095,7 @@
     (pin "2" (uuid d0d30a40-bae2-4421-ada7-9d42ca51f5d0))
     (pin "1" (uuid cca72abf-b50c-4f73-8202-6673e33fab53))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S3") (unit 1)
         )
@@ -1832,7 +2127,7 @@
     (pin "1" (uuid d27729ef-8919-47c4-8b7c-7a3cf9223f79))
     (pin "2" (uuid c43aa866-5816-45b3-9dde-3c6bf45c5261))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D40") (unit 1)
         )
@@ -1864,7 +2159,7 @@
     (pin "1" (uuid 9455ac51-dd02-498b-bd8a-6eb79a5439b9))
     (pin "2" (uuid 2186b5f5-abc7-4a4c-8cef-46df3595f36c))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D32") (unit 1)
         )
@@ -1896,7 +2191,7 @@
     (pin "1" (uuid 559c7843-5a65-421e-a1af-749cbabd30df))
     (pin "2" (uuid 1c79c6fc-ffba-490f-87b0-2e3aabc25745))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D15") (unit 1)
         )
@@ -1922,7 +2217,7 @@
     (pin "2" (uuid 52de69bd-650a-402e-ab71-e2e8d0d490bf))
     (pin "1" (uuid 1e16cd24-aa16-4f60-bd1a-dc7aaf48da11))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S34") (unit 1)
         )
@@ -1954,7 +2249,7 @@
     (pin "1" (uuid 60c00acc-9bdb-451f-b1ba-89c55210ab29))
     (pin "2" (uuid ae39f89d-5637-4a96-b44c-bb958a602b2c))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D6") (unit 1)
         )
@@ -1986,7 +2281,7 @@
     (pin "1" (uuid 2a2a59b1-a181-4f3c-9846-8a95d9c321f8))
     (pin "2" (uuid c18c9d1e-04e5-4020-a21f-c77987bbd14c))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D8") (unit 1)
         )
@@ -2012,7 +2307,7 @@
     (pin "2" (uuid 7d20e1b4-c64f-4520-a3ed-ad02c9469712))
     (pin "1" (uuid 141c430b-e010-4475-95d8-5b80779c8331))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S10") (unit 1)
         )
@@ -2044,9 +2339,35 @@
     (pin "1" (uuid e85ed0cb-d250-4582-a3ce-6224b3fac59e))
     (pin "2" (uuid 8a5aa588-c193-490b-a29b-e8ae07755244))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D38") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 76.2 140.97 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5fee23d8-fdf6-4b6f-85b4-b77e86d5e91f)
+    (property "Reference" "R0" (at 76.2 134.62 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "4k7" (at 76.2 137.16 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 76.2 142.748 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.2 140.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 248756da-09a0-4ca5-ba27-2c1e46549ba4))
+    (pin "1" (uuid a87acbb6-204d-4100-9ad8-48f56c8557cd))
+    (instances
+      (project "cesar-3"
+        (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
+          (reference "R0") (unit 1)
         )
       )
     )
@@ -2070,7 +2391,7 @@
     (pin "2" (uuid 14d1d6ee-3165-4b8c-9b50-905caba9cdd6))
     (pin "1" (uuid f553e418-bfe5-4b41-ac95-96dfc730e88e))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S20") (unit 1)
         )
@@ -2102,7 +2423,7 @@
     (pin "1" (uuid 3d57232a-8022-4c6c-9388-8787c2ee7709))
     (pin "2" (uuid f97f3e9a-5449-4081-a523-04569dfc26c7))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D1") (unit 1)
         )
@@ -2134,7 +2455,7 @@
     (pin "1" (uuid 3f73d58d-9f61-40d9-b846-aa6194ec3b94))
     (pin "2" (uuid ee5b105d-a48e-489e-8def-9096aa6cff16))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D3") (unit 1)
         )
@@ -2160,7 +2481,7 @@
     (pin "2" (uuid 34dc0a8b-a5b8-42ae-a139-79a417d41c8b))
     (pin "1" (uuid cec4f5ac-5ca6-4cf3-8e18-af6cbcf0c754))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S11") (unit 1)
         )
@@ -2186,7 +2507,7 @@
     (pin "2" (uuid eb35b0e4-8900-4481-8446-0a559fc2d73f))
     (pin "1" (uuid 393ebe46-b645-44a9-ad37-deea1e9b51a5))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S36") (unit 1)
         )
@@ -2218,7 +2539,7 @@
     (pin "1" (uuid ecc3c636-ca13-46cb-a3a0-06865d0c9b77))
     (pin "2" (uuid 9b450bd6-f4b6-4643-aa37-3c5b64f39623))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D4") (unit 1)
         )
@@ -2244,7 +2565,7 @@
     (pin "2" (uuid c83ad24d-1358-4fba-a64d-29d82afff731))
     (pin "1" (uuid e52dd4d9-43a1-4066-b071-b9ef960384cd))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S5") (unit 1)
         )
@@ -2270,7 +2591,7 @@
     (pin "2" (uuid 495dee42-27e0-44be-8a15-ca73642039f2))
     (pin "1" (uuid 56b9998d-d727-452c-ab8c-938b645e9c38))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S19") (unit 1)
         )
@@ -2296,7 +2617,7 @@
     (pin "2" (uuid 428f678b-0342-48bc-a8f1-3f1bc38e70a3))
     (pin "1" (uuid fba1dd0b-f612-4704-a875-ed57c015ff56))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S31") (unit 1)
         )
@@ -2322,7 +2643,7 @@
     (pin "2" (uuid 64e5225c-c64f-4f2d-bfcf-89278ac2ee73))
     (pin "1" (uuid fc3e1f83-fa3f-44f0-88d1-4ed46a4c7256))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S8") (unit 1)
         )
@@ -2348,7 +2669,7 @@
     (pin "2" (uuid 766892dd-b6bf-49d6-93d9-cfc5da815647))
     (pin "1" (uuid ff5db485-8bf8-4bc4-a000-959d8a0d35ab))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S14") (unit 1)
         )
@@ -2380,7 +2701,7 @@
     (pin "1" (uuid bb05ae40-0d2f-4ae2-82b5-fecbf8c58cd6))
     (pin "2" (uuid 0f75ad56-8c5e-409f-812d-7fb25cb10733))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D35") (unit 1)
         )
@@ -2406,7 +2727,7 @@
     (pin "2" (uuid 7fb1d3de-6d10-4d1a-8047-d5b59cb67b50))
     (pin "1" (uuid ade3938f-905e-4683-b256-8997cdfb3cdb))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S40") (unit 1)
         )
@@ -2432,7 +2753,7 @@
     (pin "2" (uuid be389834-7507-4d36-a4f9-d893ed040e25))
     (pin "1" (uuid 1ae736cb-e181-43ee-a02b-01e3fd43fe47))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S18") (unit 1)
         )
@@ -2464,7 +2785,7 @@
     (pin "1" (uuid 2072ee55-e167-4833-ba1d-5087a1cbda50))
     (pin "2" (uuid 3021e2ff-50bd-4504-92fe-dadad7807502))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D31") (unit 1)
         )
@@ -2496,7 +2817,7 @@
     (pin "1" (uuid 60db7ab2-081e-4268-8889-f13ebc373497))
     (pin "2" (uuid f83dad71-633e-4985-bd60-280130685844))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D10") (unit 1)
         )
@@ -2528,7 +2849,7 @@
     (pin "1" (uuid 5e51e641-4469-40db-9864-2fe923056576))
     (pin "2" (uuid 707db2c1-ef5f-4343-b4ec-f29d6388b1a9))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D2") (unit 1)
         )
@@ -2560,7 +2881,7 @@
     (pin "1" (uuid 88f2f6f9-e20c-47eb-88e5-d36f069b7e56))
     (pin "2" (uuid a91983e0-644e-4ab3-8849-c62c832400fc))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D27") (unit 1)
         )
@@ -2592,7 +2913,7 @@
     (pin "1" (uuid bd1f0c57-4a43-4dcd-955e-f4c75ebf789a))
     (pin "2" (uuid 953cc87f-8fb7-46e9-9155-16c942e84967))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D9") (unit 1)
         )
@@ -2618,7 +2939,7 @@
     (pin "2" (uuid 7ecbb255-db06-4f0d-a08b-facd982cf79d))
     (pin "1" (uuid 265dec94-004a-443e-8c86-c50ae8cbcb9d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S13") (unit 1)
         )
@@ -2650,9 +2971,35 @@
     (pin "1" (uuid 109c0805-3c40-4350-b46f-8c65caf4874e))
     (pin "2" (uuid 3e871b01-b87a-40af-9850-2a3b5bf808b9))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D19") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 160.02 138.43 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 99327924-33f8-4d32-9bb0-f3cb47877197)
+    (property "Reference" "SW0" (at 160.02 130.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 160.02 133.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Button_Switch_SMD:SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS" (at 160.02 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 160.02 133.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a4207b78-1aba-47e6-94d7-59c746deff7e))
+    (pin "2" (uuid ccd74cb3-36c7-4c0b-a134-624aff0a1a63))
+    (instances
+      (project "cesar-3"
+        (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
+          (reference "SW0") (unit 1)
         )
       )
     )
@@ -2676,7 +3023,7 @@
     (pin "2" (uuid 528022de-9715-4963-a640-b446287edd90))
     (pin "1" (uuid 393540f4-87cc-4b33-b855-cd96a6f38af1))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S24") (unit 1)
         )
@@ -2702,7 +3049,7 @@
     (pin "2" (uuid 020db4be-33e9-4046-8a77-4717268cbae1))
     (pin "1" (uuid 79262093-d88b-4ba2-9e21-51b6e67f1eab))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S42") (unit 1)
         )
@@ -2734,7 +3081,7 @@
     (pin "1" (uuid 7a6c34a4-1a17-44a6-b603-e73cff4ee991))
     (pin "2" (uuid 9d2b110a-6495-4ef1-9e30-731e99963645))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D42") (unit 1)
         )
@@ -2760,7 +3107,7 @@
     (pin "2" (uuid f1b824fc-5925-4b38-9087-8ef761042382))
     (pin "1" (uuid 37f68ed1-a4b3-4330-b869-89da7ac6c2e3))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S16") (unit 1)
         )
@@ -2792,7 +3139,7 @@
     (pin "1" (uuid d35663c4-6e7c-44bb-9dcd-52c30881f97c))
     (pin "2" (uuid 8f6ec0b8-235d-467a-afa0-f9bfefc77f97))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D26") (unit 1)
         )
@@ -2824,7 +3171,7 @@
     (pin "1" (uuid 394c2b5c-f99b-4e14-8f90-cd2844cf6973))
     (pin "2" (uuid f6769951-13d2-4a09-a0af-4be6b76ff9dc))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D28") (unit 1)
         )
@@ -2850,7 +3197,7 @@
     (pin "2" (uuid 1b215346-f901-426c-b3f1-3d26e6c1be00))
     (pin "1" (uuid daa19799-1a85-405a-83b1-4ed032d3088d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S23") (unit 1)
         )
@@ -2882,7 +3229,7 @@
     (pin "1" (uuid 879fe07b-04f2-4e4f-a50c-f84a2d8ec85d))
     (pin "2" (uuid 4b3d12f6-70cf-41d7-be32-06307f4537c3))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D7") (unit 1)
         )
@@ -2914,7 +3261,7 @@
     (pin "1" (uuid c49f2337-33fe-4f90-aa28-f7585b3d26c9))
     (pin "2" (uuid b0ddf544-87e6-417f-9aed-30dafc7d1de3))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D21") (unit 1)
         )
@@ -2946,7 +3293,7 @@
     (pin "1" (uuid ecf06e38-eb73-47bf-9cca-834322af4716))
     (pin "2" (uuid 5e8c49ee-3a83-48d0-916e-cd9e035827ef))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D18") (unit 1)
         )
@@ -2972,7 +3319,7 @@
     (pin "2" (uuid 04395f8b-7b54-4331-a865-1245b77fea9e))
     (pin "1" (uuid 8451bb33-91d4-4977-9a23-c8b7a3466a3d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S35") (unit 1)
         )
@@ -3004,7 +3351,7 @@
     (pin "1" (uuid 904cf703-2ad3-436f-9f9f-f9f1e94ab139))
     (pin "2" (uuid 1ae22ac2-0182-41c2-b0a2-fb348545a60d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D5") (unit 1)
         )
@@ -3030,7 +3377,7 @@
     (pin "2" (uuid 7283b3ed-8c4b-4e51-9d2f-376ef4b2e75e))
     (pin "1" (uuid 3564f8c7-1e9c-4e9e-87ab-40fb3f637981))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S37") (unit 1)
         )
@@ -3056,7 +3403,7 @@
     (pin "2" (uuid fc1e6362-3289-4577-ba6d-e569a33186c3))
     (pin "1" (uuid 56f91f1b-9e80-4764-8943-d2e812490cf8))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S4") (unit 1)
         )
@@ -3082,7 +3429,7 @@
     (pin "2" (uuid 102e8a95-2475-4dda-b31a-f53368c51ccf))
     (pin "1" (uuid bbe26e53-173e-4d0e-8dac-6695032f4388))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S21") (unit 1)
         )
@@ -3114,7 +3461,7 @@
     (pin "1" (uuid 96d71b1e-1299-4ef3-a711-eb45011a0083))
     (pin "2" (uuid b7b81ec1-7dbf-428a-99b7-f654a8c008cd))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D30") (unit 1)
         )
@@ -3146,9 +3493,35 @@
     (pin "1" (uuid 079142e9-c4ad-4197-be70-a9dbd1f97bc4))
     (pin "2" (uuid efebf062-a636-44bc-9e90-76f2719ba3c3))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 76.2 130.81 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c9fccb9e-fc3f-4603-98a5-a7a9f83f5dc4)
+    (property "Reference" "R1" (at 76.2 124.46 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "4k7" (at 76.2 127 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 76.2 132.588 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.2 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 7035fa99-f5c4-4ad6-a1cb-cea1a886b290))
+    (pin "1" (uuid 40427bb9-1aec-4f26-9038-40b1f8b713cb))
+    (instances
+      (project "cesar-3"
+        (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3178,7 +3551,7 @@
     (pin "1" (uuid 061edc58-df94-45da-b433-8af5ff2fb749))
     (pin "2" (uuid 7d2f4bd1-f849-4fa4-b330-d36c3841a382))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D20") (unit 1)
         )
@@ -3204,7 +3577,7 @@
     (pin "2" (uuid 7da49417-eaa0-41c1-946a-63b394b5d295))
     (pin "1" (uuid 70ef0370-8e40-4ea2-9f0e-869d8b3a9b92))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S7") (unit 1)
         )
@@ -3236,7 +3609,7 @@
     (pin "1" (uuid e01d4f83-16be-4b26-baae-97c96e543957))
     (pin "2" (uuid 5f0dc5db-0506-40f9-9589-5f5c4bd0421d))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D34") (unit 1)
         )
@@ -3262,7 +3635,7 @@
     (pin "2" (uuid 17c1b3cf-9514-4f09-a13c-2d56d8af0653))
     (pin "1" (uuid 70d83658-4d8a-4074-8a89-25c23161a706))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S39") (unit 1)
         )
@@ -3288,7 +3661,7 @@
     (pin "2" (uuid 2ad05c96-da4e-4f06-ae8d-a2eb5b37d5dc))
     (pin "1" (uuid 98107084-11cd-4a8d-b3fa-cb9dc948e3ca))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S12") (unit 1)
         )
@@ -3320,7 +3693,7 @@
     (pin "1" (uuid 809ff65e-5183-4048-93c9-1c99874de009))
     (pin "2" (uuid 17bab370-b681-4dc8-9575-74c2365204e1))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D25") (unit 1)
         )
@@ -3346,7 +3719,7 @@
     (pin "2" (uuid 1a09a6d8-376d-4fa2-a2a9-d64930e76083))
     (pin "1" (uuid de199cca-1810-424f-82d0-5a6fb47014db))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S17") (unit 1)
         )
@@ -3372,7 +3745,7 @@
     (pin "2" (uuid 510eb189-d4b5-43a2-861f-bb6ffd90c41a))
     (pin "1" (uuid 2563bafc-eb6b-40d2-867a-9d08769c4121))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S2") (unit 1)
         )
@@ -3404,7 +3777,7 @@
     (pin "1" (uuid 99c32782-561d-4873-8247-1fad184f0bc5))
     (pin "2" (uuid b986eab2-cabc-47b8-8a6a-7110768bffeb))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D13") (unit 1)
         )
@@ -3452,7 +3825,7 @@
     (pin "15" (uuid 244476cd-4e6c-4fbb-af8f-643a13ffe0d2))
     (pin "8" (uuid 1fba7399-6dbe-4d3d-af68-d448b751ed38))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "U1") (unit 1)
         )
@@ -3478,7 +3851,7 @@
     (pin "2" (uuid 40bf7159-83f4-4253-ba4c-29f7ca4e5bc1))
     (pin "1" (uuid b6a61377-49f0-4426-898a-3da12e4de8be))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S38") (unit 1)
         )
@@ -3504,7 +3877,7 @@
     (pin "2" (uuid faa1e316-65af-40b8-9088-8581f6dc48ec))
     (pin "1" (uuid 48655b93-a59b-4e9e-b3ac-8e09f7144ba0))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S22") (unit 1)
         )
@@ -3536,7 +3909,7 @@
     (pin "1" (uuid b67af999-49b5-4fe4-816c-340e4a49af98))
     (pin "2" (uuid 488871ba-fe29-4f73-afe9-28b9a23441dc))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "D41") (unit 1)
         )
@@ -3562,7 +3935,7 @@
     (pin "2" (uuid 0257f6d7-2e97-4150-a468-7d836e5a3fb9))
     (pin "1" (uuid cb379554-911f-420f-8792-b63da91e88e9))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S28") (unit 1)
         )
@@ -3588,7 +3961,7 @@
     (pin "2" (uuid 378a9c4c-4c83-41f4-ad4a-68973f0be161))
     (pin "1" (uuid bc671ea9-6221-4e01-8226-ff91e8654136))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S15") (unit 1)
         )
@@ -3614,7 +3987,7 @@
     (pin "2" (uuid 485eea2d-44d5-48ed-8a16-f3a4feeeca47))
     (pin "1" (uuid df2b7e6a-5ec6-4e68-bba7-231eeefcf3dd))
     (instances
-      (project "Untitled"
+      (project "cesar-3"
         (path "/0cd00693-a004-4c1d-aa16-7039b9655252"
           (reference "S1") (unit 1)
         )
