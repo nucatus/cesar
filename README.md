@@ -71,6 +71,9 @@ This layer was designed for code:
 
 ### Tuning
 
+The full keymap is in [`firmware/config/boards/shields/cesar/cesar.keymap`](firmware/config/boards/shields/cesar/cesar.keymap).
+
+
 The home-row mods and layer-taps use ZMK's `balanced` hold-tap with **positional hold-trigger** (a mod only activates when the next key is on the opposite hand). They also use a 280 ms tapping term, a 150 ms `require-prior-idle` and a 175 ms quick-tap. Together these stop accidental modifiers while you type fast.
 
 ---
@@ -82,7 +85,7 @@ The home-row mods and layer-taps use ZMK's `balanced` hold-tap with **positional
 | Keys | 42 (36 alpha + 6 thumb); 40 × 1u, 2 × 1.5u |
 | Switches | MX-style, hot-swappable (Kailh sockets) |
 | Controller | nice!nano v2 (nRF52840), wireless via Bluetooth |
-| Firmware | [ZMK](https://zmk.dev), shield `cesar` |
+| Firmware | [ZMK](https://zmk.dev), shield `cesar` (in [`firmware/`](firmware)) |
 | Matrix | 4 rows × 12 columns, `col2row`, SOD-123 diodes |
 | Extras | Reset button, two indicator LEDs |
 | Plates | Top (switch) plate + bottom plate, 304 × 118 mm |
@@ -115,6 +118,7 @@ The top plate holds the switches; the bottom plate closes the case. Both are rea
 ```
 cad/                 Top and bottom plate DXF files (laser / CNC ready)
 pcb/                 KiCad project: schematic, PCB layout, project settings
+firmware/            ZMK user config with the `cesar` shield and keymap
 docs/images/         Images used in this README
 ```
 
@@ -123,6 +127,6 @@ docs/images/         Images used in this README
 1. Order the PCB from the KiCad project in `pcb/` (export Gerbers from KiCad).
 2. Cut the two plates from `cad/*.dxf` (acrylic, aluminium or FR4 all work).
 3. Solder the 42 SOD-123 diodes, the hot-swap sockets, the reset button, the LEDs and the nice!nano v2.
-4. Flash ZMK built for `nice_nano_v2` with the `cesar` shield.
+4. Build the firmware: every push runs the GitHub Actions workflow, which builds `cesar` for `nice_nano_v2`. Download the `.uf2` from the run's artifacts, double-tap reset, and copy it onto the nice!nano.
 5. Mount the plates with standoffs, add switches and keycaps.
 
