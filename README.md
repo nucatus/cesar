@@ -130,3 +130,9 @@ docs/images/         Images used in this README
 4. Build the firmware: every push runs the GitHub Actions workflow, which builds `cesar` for `nice_nano_v2`. Download the `.uf2` from the run's artifacts, double-tap reset, and copy it onto the nice!nano.
 5. Mount the plates with standoffs, add switches and keycaps.
 
+## License
+
+- **Hardware** (`pcb/`, `cad/`, and the images and documentation in this repository): Copyright (c) 2024 Alexandru Ionita, licensed under the [CERN Open Hardware Licence Version 2 – Strongly Reciprocal](LICENSE) (CERN-OHL-S-2.0). If you distribute a modified version of the design, or products made from one, you must publish your modified source under the same licence.
+- **Firmware** (`firmware/`): [MIT](firmware/LICENSE). The ZMK shield files keep their original copyright from the ZMK Contributors.
+
+Source location: https://github.com/nucatus/cesar
