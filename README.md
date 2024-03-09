@@ -49,7 +49,7 @@ On top of the base layer there are **three layers**, each held from a thumb key,
 
 - The most frequent digits (`0 1 2 3`) sit on the home row under the strongest fingers.
 - The arrows go `← ↓ ↑ →` in a single row, the same order as Vim's `h j k l`.
-- `Del` and `Backspace` are on the left thumbs, so you can edit while you navigate.
+- The layer is held from **either** thumb (`Esc` or `Tab`). While `Tab` holds it, the left thumbs become `Del` and `Backspace`, so you can edit while you navigate.
 
 ### Layer 2: Programming symbols
 
